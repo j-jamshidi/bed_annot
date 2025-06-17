@@ -1,3 +1,7 @@
+#This script annotates BED files with gene and exon information using MANE Select transcripts (if available) and Ensembl 105 (GRCh38/hg38).
+#It requires the pyensembl package and a MANE Select summary file.
+#Usage: python geneannot.py <input.bed>
+#conda activate gene_annot
 import pandas as pd
 from pyensembl import EnsemblRelease
 import os
